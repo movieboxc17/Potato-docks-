@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        td.editable {
+            cursor: pointer;
+        }
+
+        td.editable input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #downloadBtn {
+            margin-top: 10px;
+            padding: 8px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Project Management Dashboard</h1>
+    </header>
+    <section id="project-dashboard">
+        <table>
+            <thead>
+                <tr>
+                    <th>Task ID</th>
+                    <th>Task Name</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td>005</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td>006</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td>007</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td>008</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td>009</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td>010</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+              <tr>
+                    <td>011</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+              <tr>
+                    <td>012</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+              <tr>
+                    <td>013</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+              <tr>
+                    <td>014</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+              <tr>
+                    <td>015</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+              <tr>
+                    <td>016</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+              <tr>
+                    <td>017</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+              <tr>
+                    <td>018</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+              <tr>
+                    <td>019</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+              <tr>
+                    <td>020</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+               <tr>
+                    <td>021</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+              <tr>
+                    <td>022</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+              <tr>
+                    <td>023</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+               <tr>
+                    <td>024</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+              <tr>
+                    <td>025</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+              <tr>
+                    <td>026</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+               <tr>
+                    <td>027</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+              <tr>
+                    <td>028</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+              <tr>
+                    <td>029</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+               <tr>
+                    <td>030</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+              <tr>
+                    <td>031</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+              <tr>
+                    <td>032</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+               <tr>
+                    <td>033</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+              <tr>
+                    <td>034</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+              <tr>
+                    <td>035</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td>036</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td>036</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td>037</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td>038</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td>039</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td>040</td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                    <td class="editable" contenteditable="true"></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+
+        <button id="downloadBtn" onclick="downloadCSV()">Download CSV</button>
+    </section>
+
+    <script>
+        function downloadCSV() {
+            var csvContent = "data:text/csv;charset=utf-8,";
+            var rows = document.querySelectorAll('table tr');
+
+            rows.forEach(function(row) {
+                var rowData = Array.from(row.children).map(function(cell) {
+                    return cell.innerText;
+                });
+                csvContent += rowData.join(',') + '\r\n';
+            });
+
+            var encodedUri = encodeURI(csvContent);
+            var link = document.createElement("a");
+            link.setAttribute("href", encodedUri);
+            link.setAttribute("download", "project_data.csv");
+            document.body.appendChild(link);
+            link.click();
+        }
+    </script>
+</body>
+</html>
